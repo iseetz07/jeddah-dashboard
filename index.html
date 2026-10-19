@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لوحة معلومات جدة - التلفاز</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        
+        <!-- الصف العلوي: الساعة والتاريخ (يسار) + الصلاة القادمة (يمين) -->
+        <div class="top-row">
+            <div class="card prayer-card">
+                <div class="section-title">🕌 الصلاة القادمة</div>
+                <div id="next-prayer-name" class="prayer-name">جاري الحساب...</div>
+                <div id="next-prayer-time" class="prayer-time">--:--</div>
+                <div id="prayer-countdown" class="countdown">مواقيت محدثة لمدينة جدة</div>
+            </div>
+
+            <div class="card clock-card">
+                <div id="current-time" class="time">00:00:00</div>
+                <div id="current-date" class="date">جاري التحميل...</div>
+                <div id="hijri-date" class="hijri-date">--</div>
+            </div>
+        </div>
+
+        <!-- الصف الأوسط: أوقات الصلوات اليومية -->
+        <div class="card schedule-card">
+            <div class="section-title">أوقات الصلوات اليوم - جدة</div>
+            <div class="prayer-grid" id="prayer-schedule">
+                <!-- سيتم تعبئتها تلقائياً -->
+            </div>
+        </div>
+
+        <!-- الصف السفلي: حالة الطقس -->
+        <div class="card weather-card">
+            <div class="section-title">🌤️ حالة الطقس - جدة</div>
+            <div class="weather-info">
+                <div id="temperature" class="temp">--°C</div>
+                <div id="weather-desc" class="desc">جاري جلب الطقس...</div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

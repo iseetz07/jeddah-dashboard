@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #080b11;
+    color: #ffffff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 92vw;
+    max-width: 1500px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+    padding: 24px 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* الصف العلوي مقسم بالتساوي */
+.top-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.clock-card {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.time {
+    font-size: 4.2rem;
+    font-weight: 700;
+    color: #38bdf8;
+    letter-spacing: 1px;
+    direction: ltr;
+}
+
+.date {
+    font-size: 1.3rem;
+    color: #94a3b8;
+    margin-top: 5px;
+}
+
+.hijri-date {
+    font-size: 1.2rem;
+    color: #38bdf8;
+    margin-top: 3px;
+    font-weight: 500;
+}
+
+.prayer-card {
+    text-align: center;
+    background: linear-gradient(135deg, rgba(14, 116, 144, 0.15), rgba(30, 41, 59, 0.3));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-title {
+    font-size: 1.2rem;
+    color: #38bdf8;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.prayer-name {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #f8fafc;
+}
+
+.prayer-time {
+    font-size: 1.8rem;
+    color: #34d399;
+    margin: 3px 0;
+    font-weight: 600;
+}
+
+.countdown {
+    font-size: 1rem;
+    color: #94a3b8;
+}
+
+/* جدول الصلوات */
+.schedule-card text-align: center;
+
+.prayer-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.prayer-item {
+    background: rgba(255, 255, 255, 0.02);
+    padding: 15px 10px;
+    border-radius: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.prayer-item .name {
+    font-size: 1.1rem;
+    color: #94a3b8;
+}
+
+.prayer-item .time {
+    font-size: 1.3rem;
+    color: #ffffff;
+    margin-top: 5px;
+    font-weight: 600;
+}
+
+/* قسم الطقس */
+.weather-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.weather-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.temp {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fbbf24;
+}
+
+.desc {
+    font-size: 1.3rem;
+    color: #cbd5e1;
+}
